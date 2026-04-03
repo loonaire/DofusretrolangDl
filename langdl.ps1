@@ -22,7 +22,8 @@ param([string] $Url, [string] $Language)
 
 # si l'url n'est pas précisée, on prend celle par défauts
 if ( -not $Url ) {
-    $Url = "http://dofusretro.cdn.ankama.com/"
+    #$Url = "http://dofusretro.cdn.ankama.com/" # old path ( dofus retro < 1.48)
+	$Url = "http://dofusretro.cdn.ankama.com/static-data/612/" # Dofus retro >= 1.48
 }
 # on se place dans le dossier qui contient le fichier de version
 $downloadUrl = $Url + "lang/"
